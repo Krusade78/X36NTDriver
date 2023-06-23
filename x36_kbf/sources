@@ -1,0 +1,7 @@
+TARGETNAME=x36_kbf
+TARGETPATH=obj
+TARGETTYPE=DRIVER
+
+SOURCES=kbfiltr.c \
+        kbfiltr.rc
+

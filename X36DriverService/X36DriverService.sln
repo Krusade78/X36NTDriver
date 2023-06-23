@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X36DriverService", "X36DriverService.vcproj", "{BF37EDD2-F285-42C4-920E-7BF2098E29AE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "X36DriverServiceDll", "X36DriverServiceDll\X36DriverServiceDll.vcproj", "{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+		ConfigName.2 = Release(ing)
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BF37EDD2-F285-42C4-920E-7BF2098E29AE}.Debug.ActiveCfg = Debug|Win32
+		{BF37EDD2-F285-42C4-920E-7BF2098E29AE}.Debug.Build.0 = Debug|Win32
+		{BF37EDD2-F285-42C4-920E-7BF2098E29AE}.Release.ActiveCfg = Release|Win32
+		{BF37EDD2-F285-42C4-920E-7BF2098E29AE}.Release.Build.0 = Release|Win32
+		{BF37EDD2-F285-42C4-920E-7BF2098E29AE}.Release(ing).ActiveCfg = Release(ing)|Win32
+		{BF37EDD2-F285-42C4-920E-7BF2098E29AE}.Release(ing).Build.0 = Release(ing)|Win32
+		{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}.Debug.ActiveCfg = Debug|Win32
+		{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}.Debug.Build.0 = Debug|Win32
+		{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}.Release.ActiveCfg = Release|Win32
+		{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}.Release.Build.0 = Release|Win32
+		{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}.Release(ing).ActiveCfg = Release(ing)|Win32
+		{71F271A0-FA1C-482E-BE26-8A2B1F6EDB85}.Release(ing).Build.0 = Release(ing)|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

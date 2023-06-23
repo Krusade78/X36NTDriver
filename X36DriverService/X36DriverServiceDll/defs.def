@@ -1,0 +1,3 @@
+LIBRARY	x36_svc
+EXPORTS
+	Recalibrado @1

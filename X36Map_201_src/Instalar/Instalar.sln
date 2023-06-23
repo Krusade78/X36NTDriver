@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "X36Map (ing)", "Instalar.vdproj", "{82A306E6-3D68-4FDF-8A05-9760C4F5BCC3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "X36Map", "Setup1.vdproj", "{BD049428-68C4-4614-8EE0-7176DBF87939}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{82A306E6-3D68-4FDF-8A05-9760C4F5BCC3}.Debug.ActiveCfg = Debug
+		{82A306E6-3D68-4FDF-8A05-9760C4F5BCC3}.Debug.Build.0 = Debug
+		{82A306E6-3D68-4FDF-8A05-9760C4F5BCC3}.Release.ActiveCfg = Release
+		{82A306E6-3D68-4FDF-8A05-9760C4F5BCC3}.Release.Build.0 = Release
+		{BD049428-68C4-4614-8EE0-7176DBF87939}.Debug.ActiveCfg = Debug
+		{BD049428-68C4-4614-8EE0-7176DBF87939}.Debug.Build.0 = Debug
+		{BD049428-68C4-4614-8EE0-7176DBF87939}.Release.ActiveCfg = Release
+		{BD049428-68C4-4614-8EE0-7176DBF87939}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

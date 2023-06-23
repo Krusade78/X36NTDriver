@@ -1,0 +1,17 @@
+TARGETNAME=x36_joy
+TARGETTYPE=DRIVER
+DRIVERTYPE=WDM
+TARGETPATH=obj
+
+TARGETLIBS=$(DDK_LIB_PATH)\hidclass.lib
+
+SOURCES=hidgame.c       \
+        pnp.c           \
+        ioctl.c         \
+        poll.c          \
+        hidjoy.c        \
+	interface.c	\
+        hidgame.rc
+
+i386_SOURCES=i386\timing.c
+

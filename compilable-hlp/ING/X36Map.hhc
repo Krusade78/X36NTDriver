@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Carpeta">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Temas de ayuda">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduction">
+		<param name="Local" value="intro.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Main window (Launcher)">
+		<param name="Local" value="manual1.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Editor">
+		<param name="Local" value="manual2.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Command editor">
+		<param name="Local" value="manual3.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value='"Command" Window'>
+		<param name="Local" value="manual4.htm">
+		</OBJECT>
+	<!--<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Appendix A : Mouse emulation">
+		<param name="Local" value="manual5.htm">
+		</OBJECT>-->
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Technical support">
+		<param name="Local" value="manual6.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

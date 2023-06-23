@@ -1,0 +1,1180 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglés (Estados Unidos) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(ING) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,0,1,0
+ PRODUCTVERSION 3,0,1,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "X36Map"
+            VALUE "FileVersion", "2, 0, 1, 0"
+            VALUE "InternalName", "X36Map"
+            VALUE "LegalCopyright", "© Alfredo Costalago.  All rights reserved."
+            VALUE "ProductName", "X36 NT Driver"
+            VALUE "ProductVersion", "3, 0, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_RESUMEN$(ING) DIALOGEX 0, 0, 500, 300
+#else
+IDD_X36MAP_RESUMEN DIALOGEX 0, 0, 500, 300
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Briefing / Print"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",ID4Tab,"SysTabControl32",TCS_HOTTRACK | TCS_BUTTONS | 
+                    0x8,300,7,290,15
+    CONTROL         "",ID4Lista1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,7,25,486,267
+    CONTROL         "",ID4Lista2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,25,486,267
+    CONTROL         "",ID4Lista3,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,7,25,486,267
+    PUSHBUTTON      "",ID4Imprimir,7,7,40,15,BS_ICON
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_NUEVO$(ING) DIALOGEX 0, 0, 186, 60
+#else
+IDD_X36MAP_NUEVO DIALOGEX 0, 0, 186, 60
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "New file"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        ID1Nombre,7,20,172,12
+    DEFPUSHBUTTON   "OK",IDOK,37,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,39,50,14
+    LTEXT           "Name :",IDC_STATIC,7,7,53,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_EDITOR_EJES$(ING) DIALOGEX 0, 0, 200, 206
+#else
+IDD_X36MAP_EDITOR_EJES DIALOGEX 0, 0, 200, 206
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_VISIBLE | 
+    WS_DISABLED | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Ejes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Increase",IDLabelIncrementar,7,60,46,8,NOT WS_VISIBLE
+    LTEXT           "Decrease",IDLabelDecrementar,7,110,58,8,NOT WS_VISIBLE
+    CONTROL         "Increment",IDIncremental,"Button",BS_AUTORADIOBUTTON,7,
+                    30,50,8
+    CONTROL         "Positions",IDPosiciones,"Button",BS_AUTORADIOBUTTON,7,
+                    45,50,8
+    LTEXT           "Increase",IDLabelIncrementarPk,110,60,60,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Decrease",IDLabelDecrementarPk,110,110,64,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "Increment",IDIncrementalPk,"Button",BS_AUTORADIOBUTTON,
+                    110,30,50,8
+    CONTROL         "Positions",IDPosicionesPk,"Button",BS_AUTORADIOBUTTON,
+                    110,45,50,8
+    COMBOBOX        IDComboInc,7,80,95,100,CBS_DROPDOWNLIST | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboIncPk,110,80,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboDec,7,130,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboDecPk,110,130,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Assign to port",IDAsigPuertoEj,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,7,7,70,13
+    LISTBOX         IDListaCmds,7,77,95,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDListaCmdsPk,110,77,95,60,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDListaPos,7,153,95,50,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDListaPosPk,110,153,95,50,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Positions",IDLabelPos,35,140,37,9,NOT WS_VISIBLE
+    CTEXT           "Positions",IDLabelPosPk,140,140,37,9,NOT WS_VISIBLE
+    LTEXT           "Commands",IDLabelComandos,7,60,55,10,NOT WS_VISIBLE
+    LTEXT           "Commands",IDLabelComandosPk,110,60,55,10,NOT WS_VISIBLE
+    PUSHBUTTON      "+",IDbInsertar,15,139,12,10,NOT WS_VISIBLE
+    PUSHBUTTON      "-",IDbBorrar,81,139,12,11,NOT WS_VISIBLE
+    PUSHBUTTON      "+",IDbInsertarPk,118,139,12,11,NOT WS_VISIBLE
+    PUSHBUTTON      "-",IDbBorrarPk,186,139,12,11,NOT WS_VISIBLE
+    LTEXT           "Sensibility",IDLabelSensibilidad,7,160,96,10,NOT 
+                    WS_VISIBLE
+    LTEXT           "Sensibility",IDLabelSensibilidadPk,110,160,63,10,NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDSensibilidad,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | NOT WS_VISIBLE | WS_TABSTOP,7,180,95,10
+    CONTROL         "",IDSensibilidadPk,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | NOT WS_VISIBLE | WS_TABSTOP,110,180,95,10
+    LTEXT           "Max",IDLabelMax,12,172,19,8,NOT WS_VISIBLE
+    LTEXT           "Min",IDLabelMin,88,172,22,8,NOT WS_VISIBLE
+    LTEXT           "Max",IDLabelMaxPk,114,172,19,8,NOT WS_VISIBLE
+    LTEXT           "Min",IDLabelMinPk,190,172,22,8,NOT WS_VISIBLE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_EDITOR_BOTONES$(ING) DIALOGEX 0, 0, 214, 206
+#else
+IDD_X36MAP_EDITOR_BOTONES DIALOGEX 0, 0, 214, 206
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_VISIBLE | 
+    WS_DISABLED | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Botones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Press",IDLabelApretar,7,80,33,17
+    LTEXT           "Release",IDLabelSoltar,7,130,35,17
+    LTEXT           "Press",IDLabelApretarPk,110,80,29,16
+    LTEXT           "Release",IDLabelSoltarPk,110,130,35,17
+    COMBOBOX        IDComboApr,7,100,95,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDComboAprPk,110,100,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboSol,7,150,95,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDComboSolPk,110,150,95,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboPOV,110,11,58,100,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_TABSTOP
+    CONTROL         "Assign to port",IDAsigPuertoPOV,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,7,13,70,13
+    COMBOBOX        IDComboPuerto,110,31,58,100,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Assign to port",IDAsigPuertoBt,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,7,33,70,13
+    CONTROL         "Auto repeat",IDAutoRepeat,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,60,70,13
+    CONTROL         "Auto repeat",IDAutoRepeatPk,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,60,70,13
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_DIALOG$(ING) DIALOGEX 0, 0, 225, 303
+#else
+IDD_X36MAP_DIALOG DIALOGEX 0, 0, 225, 303
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "X36Map v2.0.1"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Load",ID0Cargar,168,22,50,16,WS_DISABLED
+    PUSHBUTTON      "Calibrate",ID0Calibrar,168,42,50,16
+    PUSHBUTTON      "Change",ID0Cambiar,162,264,50,26
+    LISTBOX         ID0ListaMapas,7,22,149,173,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",ID0Nuevo,168,80,50,16
+    PUSHBUTTON      "Edit",ID0Editar,168,100,50,16,WS_DISABLED
+    PUSHBUTTON      "Import",ID0Importar,168,120,50,16
+    PUSHBUTTON      "Exit",IDOK,168,179,50,16
+    LTEXT           "Available keyboard maps",IDC_STATIC,7,6,94,8
+    PUSHBUTTON      "Update",ID0Actualizar,168,159,50,16
+    CONTROL         "",ID0SensiDes,"msctls_trackbar32",TBS_BOTH | WS_TABSTOP,
+                    16,261,116,10
+    CONTROL         "",ID0PreciDes,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,16,281,116,10
+    LTEXT           "Refresh rate (ms)",IDC_STATIC,19,254,75,8
+    LTEXT           "Precision (pixels)",IDC_STATIC,19,274,75,8
+    EDITTEXT        ID0SensiEd,134,261,17,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        ID0PreciEd,134,281,17,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        "Mouse configuration",IDC_STATIC,8,243,209,53
+    GROUPBOX        "Auto load",IDC_STATIC,8,197,209,45
+    PUSHBUTTON      "Select",ID0Seleccionar,162,210,50,26,WS_DISABLED
+    CONTROL         "Activated",ID0Activada,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT,13,210,144,12
+    LTEXT           "Map :",IDC_STATIC,15,228,23,8
+    LTEXT           " ",ID0LabelMapa,39,227,117,11,SS_ENDELLIPSIS,
+                    WS_EX_CLIENTEDGE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_COMANDOS$(ING) DIALOGEX 0, 0, 243, 225
+#else
+IDD_X36MAP_COMANDOS DIALOGEX 0, 0, 243, 225
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Command editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",ID2ListaComandos,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,26,228,192
+    PUSHBUTTON      "Add",ID2Nuevo,7,5,30,16
+    PUSHBUTTON      "Edit",ID2Editar,41,5,30,16
+    PUSHBUTTON      "Delete",ID2Borrar,75,5,30,16
+    PUSHBUTTON      "Add Mouse",ID2Raton,109,5,60,16
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_CMD_EDITAR$(ING) DIALOGEX 0, 0, 132, 127
+#else
+IDD_X36MAP_CMD_EDITAR DIALOGEX 0, 0, 132, 127
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Command"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Save",ID3Guardar,91,106,34,14,NOT WS_TABSTOP
+    EDITTEXT        ID3Nombre,7,18,118,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "Name :",IDC_STATIC,7,7,29,9
+    LISTBOX         ID3ListaTeclas,7,60,80,60,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    LTEXT           "Keys :",IDC_STATIC,7,49,28,8
+    PUSHBUTTON      "<",ID3InsTecla,91,63,17,16,NOT WS_TABSTOP
+    DEFPUSHBUTTON   ">",ID3BoTecla,91,82,17,16,NOT WS_TABSTOP
+    EDITTEXT        ID3Pulsaciones,42,33,83,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Pulsation :",IDC_STATIC,7,34,34,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_EDITOR$(ING) DIALOGEX 0, 0, 369, 330
+#else
+IDD_X36MAP_EDITOR DIALOGEX 0, 0, 369, 330
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Editor"
+MENU IDR_MENU_ING
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDTab2,"SysTabControl32",TCS_BUTTONS,242,38,150,15
+    CONTROL         "",IDTab3,"SysTabControl32",TCS_BUTTONS | TCS_MULTILINE | 
+                    TCS_FIXEDWIDTH,243,57,120,229
+    GROUPBOX        "Buttons :",IDC_STATIC,237,24,128,273
+    CONTROL         "Mode Control",IDModos,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT,41,277,70,15
+    CONTROL         "Pinkie function",IDPinkie,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT,120,277,70,15
+    GROUPBOX        "Configuration",IDC_STATIC,3,24,230,240
+    GROUPBOX        "Special functions",IDC_STATIC,3,265,230,32
+    GROUPBOX        "Mapeado de ejes",IDC_STATIC,3,297,361,32
+    LTEXT           "X Axis:",IDC_STATIC,11,312,40,8
+    COMBOBOX        IDEjeX,33,310,50,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Y Axis :",IDC_STATIC,91,312,40,8
+    LTEXT           "Z Axis:",IDC_STATIC,181,312,22,8
+    LTEXT           "R Axis:",IDC_STATIC,271,312,40,8
+    COMBOBOX        IDEjeY,113,310,58,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDEjeZ,203,310,58,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDEjeR,293,310,58,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_ACERCADE$(ING) DIALOGEX 0, 0, 196, 129
+#else
+IDD_X36MAP_ACERCADE DIALOGEX 0, 0, 196, 129
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About X36Map..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,141,108,50,14
+    ICON            IDI_Principal,IDC_STATIC,6,18,20,20
+    LTEXT           "X36Map version 2.0.1\n\nCopyright (c) 2003-2005 Alfredo Costalago\nAll rights reserved",
+                    IDC_STATIC,36,12,144,36
+    GROUPBOX        "Note about copyright",IDC_STATIC,36,54,156,51
+    CTEXT           "This program is distributed as FREEWARE.\nIt is permited its free copy and distribution, always without any charge for the end user.",
+                    IDC_STATIC,42,66,144,35,0,WS_EX_CLIENTEDGE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_CALIBRAR$(ING) DIALOGEX 0, 0, 440, 306
+#else
+IDD_X36MAP_CALIBRAR DIALOGEX 0, 0, 440, 306
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Calibrar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,382,285,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,328,285,50,14
+    PUSHBUTTON      "Clear real max & min",ID6Borrar,7,285,92,14
+    GROUPBOX        "X axis",IDC_STATIC,7,7,205,129
+    PUSHBUTTON      "Test values",ID6Botonx,122,120,73,12
+    LTEXT           "Central Null Zone :",IDC_STATIC,122,92,59,8
+    LTEXT           "Null Zone :             /",IDC_STATIC,122,107,71,8
+    CONTROL         "",ID6Reglaxr,"msctls_trackbar32",WS_TABSTOP,17,25,186,
+                    10
+    CONTROL         "",ID6Reglaxv,"msctls_trackbar32",WS_TABSTOP,17,65,186,
+                    10
+    CTEXT           "Real position",IDC_STATIC,69,15,75,8
+    CTEXT           "Filtered position",IDC_STATIC,69,55,75,8
+    LTEXT           "Min limit :",IDC_STATIC,15,92,75,8
+    LTEXT           "Center :",IDC_STATIC,15,107,75,8
+    LTEXT           "Max limit :",IDC_STATIC,15,121,75,8
+    CTEXT           "00000",ID6xrmin,12,35,20,8
+    CTEXT           "0",ID6xrval,69,35,75,8
+    CTEXT           "00000",ID6xrmax,188,35,20,8
+    CTEXT           "00000",ID6xvmin,12,75,20,8
+    CTEXT           "0",ID6xvval,69,75,75,8
+    CTEXT           "00000",ID6xvmax,188,75,20,8
+    EDITTEXT        ID6Escalax1,161,105,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalax2,186,105,17,12,ES_NUMBER
+    EDITTEXT        ID6ZNulax1,183,90,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNulax0,66,90,30,12,ES_NUMBER
+    EDITTEXT        ID6Centrox,66,105,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulax2,66,120,30,12,ES_NUMBER
+    GROUPBOX        "Y axis",IDC_STATIC,227,7,205,129
+    PUSHBUTTON      "Test values",ID6Botony,342,120,73,12
+    LTEXT           "Central Null Zone :",IDC_STATIC,342,92,61,8
+    LTEXT           "Null Zone :             /",IDC_STATIC,342,107,70,8
+    CONTROL         "",ID6Reglayr,"msctls_trackbar32",WS_TABSTOP,237,25,186,
+                    10
+    CONTROL         "",ID6Reglayv,"msctls_trackbar32",WS_TABSTOP,237,65,186,
+                    10
+    CTEXT           "Real position",IDC_STATIC,289,15,75,8
+    CTEXT           "Filtered position",IDC_STATIC,289,55,75,8
+    LTEXT           "Min limit :",IDC_STATIC,235,92,75,8
+    LTEXT           "Center :",IDC_STATIC,235,107,75,8
+    LTEXT           "Max limit :",IDC_STATIC,235,121,75,8
+    CTEXT           "00000",ID6yrmin,232,35,20,8
+    CTEXT           "0",ID6yrval,289,35,75,8
+    CTEXT           "00000",ID6yrmax,408,35,20,8
+    CTEXT           "00000",ID6yvmin,232,75,20,8
+    CTEXT           "0",ID6yvval,289,75,75,8
+    CTEXT           "00000",ID6yvmax,408,75,20,8
+    EDITTEXT        ID6Escalay1,383,106,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalay2,406,105,17,12,ES_NUMBER
+    EDITTEXT        ID6Centroy,286,105,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulay0,286,90,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulay1,403,90,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNulay2,286,120,30,12,ES_NUMBER
+    GROUPBOX        "Throttle",IDC_STATIC,7,147,205,129
+    PUSHBUTTON      "Test values",ID6Botonz,122,260,73,12
+    LTEXT           "Central Null Zone :",IDC_STATIC,122,232,66,8
+    LTEXT           "Null Zones :           /",IDC_STATIC,122,247,69,8
+    CONTROL         "",ID6Reglazr,"msctls_trackbar32",WS_TABSTOP,17,165,186,
+                    10
+    CONTROL         "",ID6Reglazv,"msctls_trackbar32",WS_TABSTOP,17,205,186,
+                    10
+    CTEXT           "Real position",IDC_STATIC,69,155,75,8
+    CTEXT           "Filtered position",IDC_STATIC,69,195,75,8
+    LTEXT           "Min limit :",IDC_STATIC,15,232,75,8
+    LTEXT           "Center :",IDC_STATIC,15,247,75,8
+    LTEXT           "Max limit :",IDC_STATIC,15,261,75,8
+    CTEXT           "00000",ID6zrmin,12,175,20,8
+    CTEXT           "0",ID6zrval,69,175,75,8
+    CTEXT           "00000",ID6zrmax,188,175,20,8
+    CTEXT           "00000",ID6zvmin,12,215,20,8
+    CTEXT           "0",ID6zvval,69,215,75,8
+    CTEXT           "00000",ID6zvmax,188,215,20,8
+    EDITTEXT        ID6Escalaz1,161,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalaz2,186,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Centroz,66,245,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulaz0,66,230,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulaz1,183,230,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNulaz2,66,260,30,12,ES_NUMBER
+    GROUPBOX        "Rudder",IDC_STATIC,227,147,205,129
+    PUSHBUTTON      "Test values",ID6Botonr,342,260,73,12
+    LTEXT           "Central Null Zone :",IDC_STATIC,342,232,65,8
+    LTEXT           "Null Zone :             /",IDC_STATIC,342,247,68,8
+    CONTROL         "",ID6Reglarr,"msctls_trackbar32",WS_TABSTOP,237,165,186,
+                    10
+    CONTROL         "",ID6Reglarv,"msctls_trackbar32",WS_TABSTOP,237,205,186,
+                    10
+    CTEXT           "Real position",IDC_STATIC,289,155,75,8
+    CTEXT           "Filtered position",IDC_STATIC,289,195,75,8
+    LTEXT           "Min limit :",IDC_STATIC,235,232,75,8
+    LTEXT           "Center :",IDC_STATIC,235,247,75,8
+    LTEXT           "Max limit :",IDC_STATIC,235,261,75,8
+    CTEXT           "00000",ID6rrmin,232,175,20,8
+    CTEXT           "0",ID6rrval,289,175,75,8
+    CTEXT           "00000",ID6rrmax,408,175,20,8
+    CTEXT           "00000",ID6rvmin,232,215,20,8
+    CTEXT           "0",ID6rvval,289,215,75,8
+    CTEXT           "00000",ID6rvmax,408,215,20,8
+    EDITTEXT        ID6Escalar1,383,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalar2,406,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Centror,286,245,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNular0,286,230,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNular1,403,230,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNular2,286,260,30,12,ES_NUMBER
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ING)
+#if defined(APSTUDIO_INVOKED)
+IDR_MENU_ING$(ING) MENU 
+#else
+IDR_MENU_ING MENU 
+#endif
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Save",                        ID_ARCHIVO_GUARDAR
+        MENUITEM "Save as...",                  ID_ARCHIVO_GUARDARCOMO
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_ARCHIVO_SALIR
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Command editor",              ID_VER_COMANDOS
+        MENUITEM "Briefing/Print",              ID_VER_RESUMEN
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About X36Map...",             ID_SOBRE_SOBREELX36MAP
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_X36MAP_ACERCADE$(ING)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    "IDD_X36MAP_CALIBRAR$(ING)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Inglés (Estados Unidos) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Español resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+VS_VERSION_INFO$(ESP) VERSIONINFO
+#else
+VS_VERSION_INFO VERSIONINFO
+#endif
+ FILEVERSION 2,0,1,0
+ PRODUCTVERSION 3,0,1,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40000L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "FileDescription", "X36Map"
+            VALUE "FileVersion", "2, 0, 1, 0"
+            VALUE "InternalName", "X36Map"
+            VALUE "LegalCopyright", "© Alfredo Costalago.  Todos los derechos reservados"
+            VALUE "ProductName", "X36 NT Driver"
+            VALUE "ProductVersion", "3, 0, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_DIALOG$(ESP) DIALOGEX 0, 0, 225, 303
+#else
+IDD_X36MAP_DIALOG DIALOGEX 0, 0, 225, 303
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "X36Map v2.0.1"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Cargar",ID0Cargar,168,22,50,16,WS_DISABLED
+    PUSHBUTTON      "Calibrar",ID0Calibrar,168,42,50,16
+    PUSHBUTTON      "Cambiar",ID0Cambiar,162,264,50,25
+    LISTBOX         ID0ListaMapas,7,22,149,173,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Nuevo",ID0Nuevo,168,80,50,16
+    PUSHBUTTON      "Editar",ID0Editar,168,100,50,16,WS_DISABLED
+    PUSHBUTTON      "Importar",ID0Importar,168,120,50,16
+    PUSHBUTTON      "Salir",IDOK,168,179,50,16
+    LTEXT           "Mapas de teclado disponibles",IDC_STATIC,7,6,94,8
+    PUSHBUTTON      "Actualizar",ID0Actualizar,168,159,50,16
+    CONTROL         "",ID0SensiDes,"msctls_trackbar32",TBS_BOTH | WS_TABSTOP,
+                    16,261,116,10
+    CONTROL         "",ID0PreciDes,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_BOTH | WS_TABSTOP,16,281,116,10
+    LTEXT           "Tasa de refresco (ms)",IDC_STATIC,19,254,75,8
+    LTEXT           "Precisión (pixels)",IDC_STATIC,19,274,75,8
+    EDITTEXT        ID0SensiEd,134,261,17,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    EDITTEXT        ID0PreciEd,134,281,17,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    GROUPBOX        "Configuración ratón",IDC_STATIC,8,243,209,53
+    GROUPBOX        "Carga automática",IDC_STATIC,8,197,209,45
+    PUSHBUTTON      "Seleccionar",ID0Seleccionar,162,210,50,26,WS_DISABLED
+    CONTROL         "Activada",ID0Activada,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT,13,210,144,12
+    LTEXT           "Mapa :",IDC_STATIC,15,228,23,8
+    LTEXT           " ",ID0LabelMapa,39,227,117,11,SS_ENDELLIPSIS,
+                    WS_EX_CLIENTEDGE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_NUEVO$(ESP) DIALOGEX 0, 0, 186, 60
+#else
+IDD_X36MAP_NUEVO DIALOGEX 0, 0, 186, 60
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Nuevo archivo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        ID1Nombre,7,20,172,12
+    DEFPUSHBUTTON   "Aceptar",IDOK,37,39,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,101,39,50,14
+    LTEXT           "Nombre :",IDC_STATIC,7,7,53,8
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_EDITOR$(ESP) DIALOGEX 0, 0, 369, 330
+#else
+IDD_X36MAP_EDITOR DIALOGEX 0, 0, 369, 330
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Editor"
+MENU IDR_MENU_ESP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDTab2,"SysTabControl32",TCS_BUTTONS,242,38,150,15
+    CONTROL         "",IDTab3,"SysTabControl32",TCS_BUTTONS | TCS_MULTILINE | 
+                    TCS_FIXEDWIDTH,243,57,120,229
+    GROUPBOX        "Botones :",IDC_STATIC,237,24,128,273
+    CONTROL         "Control de modo",IDModos,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT,41,277,70,15
+    CONTROL         "Función Pinkie",IDPinkie,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT,120,277,70,15
+    GROUPBOX        "Configuración",IDC_STATIC,3,24,230,240
+    GROUPBOX        "Funciones especiales",IDC_STATIC,3,265,230,32
+    GROUPBOX        "Mapeado de ejes",IDC_STATIC,3,297,361,32
+    LTEXT           "Eje X :",IDC_STATIC,11,312,40,8
+    COMBOBOX        IDEjeX,33,310,50,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Eje Y :",IDC_STATIC,91,312,40,8
+    LTEXT           "Eje Z :",IDC_STATIC,181,312,22,8
+    LTEXT           "Eje R :",IDC_STATIC,271,312,40,8
+    COMBOBOX        IDEjeY,113,310,58,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDEjeZ,203,310,58,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDEjeR,293,310,58,11,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_EDITOR_BOTONES$(ESP) DIALOGEX 0, 0, 214, 206
+#else
+IDD_X36MAP_EDITOR_BOTONES DIALOGEX 0, 0, 214, 206
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_VISIBLE | 
+    WS_DISABLED | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Botones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Apretar",IDLabelApretar,7,80,33,17
+    LTEXT           "Soltar",IDLabelSoltar,7,130,35,17
+    LTEXT           "Apretar",IDLabelApretarPk,110,80,29,16
+    LTEXT           "Soltar",IDLabelSoltarPk,110,130,35,17
+    COMBOBOX        IDComboApr,7,100,95,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDComboAprPk,110,100,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboSol,7,150,95,100,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDComboSolPk,110,150,95,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboPOV,110,11,58,100,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_TABSTOP
+    CONTROL         "POV DirectX",IDAsigPuertoPOV,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,7,13,70,13
+    COMBOBOX        IDComboPuerto,110,31,58,100,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Botón DirectX",IDAsigPuertoBt,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,7,33,70,13
+    CONTROL         "Auto repetición",IDAutoRepeat,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,60,70,13
+    CONTROL         "Auto repetición",IDAutoRepeatPk,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,110,60,70,13
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_EDITOR_EJES$(ESP) DIALOGEX 0, 0, 200, 206
+#else
+IDD_X36MAP_EDITOR_EJES DIALOGEX 0, 0, 200, 206
+#endif
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD | WS_VISIBLE | 
+    WS_DISABLED | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Ejes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Incrementar",IDLabelIncrementar,7,60,46,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Decrementar",IDLabelDecrementar,7,110,58,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "Incremental",IDIncremental,"Button",BS_AUTORADIOBUTTON,
+                    7,30,50,8
+    CONTROL         "Posiciones",IDPosiciones,"Button",BS_AUTORADIOBUTTON,7,
+                    45,50,8
+    LTEXT           "Incrementar",IDLabelIncrementarPk,110,60,60,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "Decrementar",IDLabelDecrementarPk,110,110,64,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "Incremental",IDIncrementalPk,"Button",
+                    BS_AUTORADIOBUTTON,110,30,50,8
+    CONTROL         "Posiciones",IDPosicionesPk,"Button",BS_AUTORADIOBUTTON,
+                    110,45,50,8
+    COMBOBOX        IDComboInc,7,80,95,100,CBS_DROPDOWNLIST | CBS_SORT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboIncPk,110,80,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboDec,7,130,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDComboDecPk,110,130,95,100,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Asignar al puerto",IDAsigPuertoEj,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,7,7,70,13
+    LISTBOX         IDListaCmds,7,77,95,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDListaCmdsPk,110,77,95,60,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDListaPos,7,153,95,50,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDListaPosPk,110,153,95,50,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Posiciones",IDLabelPos,35,140,37,9,NOT WS_VISIBLE
+    CTEXT           "Posiciones",IDLabelPosPk,140,140,37,9,NOT WS_VISIBLE
+    LTEXT           "Comandos",IDLabelComandos,7,60,55,10,NOT WS_VISIBLE
+    LTEXT           "Comandos",IDLabelComandosPk,110,60,55,10,NOT WS_VISIBLE
+    PUSHBUTTON      "+",IDbInsertar,15,139,12,10,NOT WS_VISIBLE
+    PUSHBUTTON      "-",IDbBorrar,81,139,12,11,NOT WS_VISIBLE
+    PUSHBUTTON      "+",IDbInsertarPk,118,139,12,11,NOT WS_VISIBLE
+    PUSHBUTTON      "-",IDbBorrarPk,186,139,12,11,NOT WS_VISIBLE
+    LTEXT           "Sensibilidad",IDLabelSensibilidad,7,160,96,10,NOT 
+                    WS_VISIBLE
+    LTEXT           "Sensibilidad",IDLabelSensibilidadPk,110,160,63,10,NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDSensibilidad,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | NOT WS_VISIBLE | WS_TABSTOP,7,180,95,10
+    CONTROL         "",IDSensibilidadPk,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | NOT WS_VISIBLE | WS_TABSTOP,110,180,95,10
+    LTEXT           "Max",IDLabelMax,12,172,19,8,NOT WS_VISIBLE
+    LTEXT           "Min",IDLabelMin,88,172,22,8,NOT WS_VISIBLE
+    LTEXT           "Max",IDLabelMaxPk,114,172,19,8,NOT WS_VISIBLE
+    LTEXT           "Min",IDLabelMinPk,190,172,22,8,NOT WS_VISIBLE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_RESUMEN$(ESP) DIALOGEX 0, 0, 500, 300
+#else
+IDD_X36MAP_RESUMEN DIALOGEX 0, 0, 500, 300
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MAXIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resumen / Imprimir"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",ID4Tab,"SysTabControl32",TCS_HOTTRACK | TCS_BUTTONS | 
+                    0x8,300,7,290,15
+    CONTROL         "",ID4Lista1,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,7,25,486,267
+    CONTROL         "",ID4Lista2,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,25,486,267
+    CONTROL         "",ID4Lista3,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | NOT WS_VISIBLE | 
+                    WS_BORDER | WS_TABSTOP,7,25,486,267
+    PUSHBUTTON      "",ID4Imprimir,7,7,40,15,BS_ICON
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_COMANDOS$(ESP) DIALOGEX 0, 0, 243, 225
+#else
+IDD_X36MAP_COMANDOS DIALOGEX 0, 0, 243, 225
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Editor de comandos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",ID2ListaComandos,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,26,228,192
+    PUSHBUTTON      "Añadir",ID2Nuevo,7,5,30,16
+    PUSHBUTTON      "Editar",ID2Editar,41,5,30,16
+    PUSHBUTTON      "Borrar",ID2Borrar,75,5,30,16
+    PUSHBUTTON      "Añadir Ratón",ID2Raton,109,5,60,16
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_CMD_EDITAR$(ESP) DIALOGEX 0, 0, 132, 127
+#else
+IDD_X36MAP_CMD_EDITAR DIALOGEX 0, 0, 132, 127
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Comando"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Guardar",ID3Guardar,91,106,34,14,NOT WS_TABSTOP
+    EDITTEXT        ID3Nombre,7,18,118,12,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    LTEXT           "Nombre :",IDC_STATIC,7,7,29,9
+    LISTBOX         ID3ListaTeclas,7,60,80,60,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL
+    LTEXT           "Teclas :",IDC_STATIC,7,49,28,8
+    PUSHBUTTON      "<",ID3InsTecla,91,63,17,16,NOT WS_TABSTOP
+    DEFPUSHBUTTON   ">",ID3BoTecla,91,82,17,16,NOT WS_TABSTOP
+    EDITTEXT        ID3Pulsaciones,42,33,83,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Pulsación :",IDC_STATIC,7,34,34,10
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_ACERCADE$(ESP) DIALOGEX 0, 0, 196, 129
+#else
+IDD_X36MAP_ACERCADE DIALOGEX 0, 0, 196, 129
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca del X36Map..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,141,108,50,14
+    ICON            IDI_Principal,IDC_STATIC,6,18,20,20
+    LTEXT           "X36Map versión 2.0.1\n\nCopyright (c) 2003-2005 Alfredo Costalago\nTodos los derechos reservados",
+                    IDC_STATIC,36,12,144,36
+    GROUPBOX        "Notas del copyright",IDC_STATIC,36,54,156,52
+    CTEXT           "Este programa se dristibuye como FREEWARE, estando permitida la copia y distribución libre y siempre gratuita del mismo.",
+                    IDC_STATIC,42,66,144,35,0,WS_EX_CLIENTEDGE
+END
+#endif
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDD_X36MAP_CALIBRAR$(ESP) DIALOGEX 0, 0, 440, 306
+#else
+IDD_X36MAP_CALIBRAR DIALOGEX 0, 0, 440, 306
+#endif
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Calibrar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,382,285,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,328,285,50,14
+    PUSHBUTTON      "Limpiar extremos reales",ID6Borrar,7,285,92,14
+    GROUPBOX        "Eje X",IDC_STATIC,7,7,205,129
+    PUSHBUTTON      "Probar valores",ID6Botonx,122,120,73,12
+    LTEXT           "Zona Nula Central :",IDC_STATIC,122,92,64,8
+    LTEXT           "Zona Nula :             /",IDC_STATIC,122,107,75,8
+    CONTROL         "",ID6Reglaxr,"msctls_trackbar32",WS_TABSTOP,17,25,186,
+                    10
+    CONTROL         "",ID6Reglaxv,"msctls_trackbar32",WS_TABSTOP,17,65,186,
+                    10
+    CTEXT           "Posición real",IDC_STATIC,69,15,75,8
+    CTEXT           "Posición filtrada",IDC_STATIC,69,55,75,8
+    LTEXT           "Limite mínimo :",IDC_STATIC,15,92,75,8
+    LTEXT           "Centro :",IDC_STATIC,15,107,75,8
+    LTEXT           "Limite máximo :",IDC_STATIC,15,121,75,8
+    CTEXT           "00000",ID6xrmin,12,35,20,8
+    CTEXT           "0",ID6xrval,69,35,75,8
+    CTEXT           "00000",ID6xrmax,188,35,20,8
+    CTEXT           "00000",ID6xvmin,12,75,20,8
+    CTEXT           "0",ID6xvval,69,75,75,8
+    CTEXT           "00000",ID6xvmax,188,75,20,8
+    EDITTEXT        ID6Escalax1,164,105,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalax2,189,105,17,12,ES_NUMBER
+    EDITTEXT        ID6ZNulax1,186,89,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNulax0,66,90,30,12,ES_NUMBER
+    EDITTEXT        ID6Centrox,66,105,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulax2,66,120,30,12,ES_NUMBER
+    GROUPBOX        "Eje Y",IDC_STATIC,227,7,205,129
+    PUSHBUTTON      "Probar valores",ID6Botony,342,120,73,12
+    LTEXT           "Zona Nula Central :",IDC_STATIC,342,92,69,8
+    LTEXT           "Zona Nula :             /",IDC_STATIC,342,107,78,8
+    CONTROL         "",ID6Reglayr,"msctls_trackbar32",WS_TABSTOP,237,25,186,
+                    10
+    CONTROL         "",ID6Reglayv,"msctls_trackbar32",WS_TABSTOP,237,65,186,
+                    10
+    CTEXT           "Posición real",IDC_STATIC,289,15,75,8
+    CTEXT           "Posición filtrada",IDC_STATIC,289,55,75,8
+    LTEXT           "Límite mínimo :",IDC_STATIC,235,92,75,8
+    LTEXT           "Centro :",IDC_STATIC,235,107,75,8
+    LTEXT           "Límite máximo :",IDC_STATIC,235,121,75,8
+    CTEXT           "00000",ID6yrmin,232,35,20,8
+    CTEXT           "0",ID6yrval,289,35,75,8
+    CTEXT           "00000",ID6yrmax,408,35,20,8
+    CTEXT           "00000",ID6yvmin,232,75,20,8
+    CTEXT           "0",ID6yvval,289,75,75,8
+    CTEXT           "00000",ID6yvmax,408,75,20,8
+    EDITTEXT        ID6Escalay1,385,105,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalay2,408,105,17,12,ES_NUMBER
+    EDITTEXT        ID6Centroy,286,105,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulay0,286,90,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulay1,405,90,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNulay2,286,120,30,12,ES_NUMBER
+    GROUPBOX        "Acelerador",IDC_STATIC,7,147,205,129
+    PUSHBUTTON      "Probar valores",ID6Botonz,122,260,73,12
+    LTEXT           "Zona Nula Central :",IDC_STATIC,122,232,62,8
+    LTEXT           "Zona Nula :             /",IDC_STATIC,122,247,74,8
+    CONTROL         "",ID6Reglazr,"msctls_trackbar32",WS_TABSTOP,17,165,186,
+                    10
+    CONTROL         "",ID6Reglazv,"msctls_trackbar32",WS_TABSTOP,17,205,186,
+                    10
+    CTEXT           "Posición real",IDC_STATIC,69,155,75,8
+    CTEXT           "Posición filtrada",IDC_STATIC,69,195,75,8
+    LTEXT           "Límite mínimo :",IDC_STATIC,15,232,75,8
+    LTEXT           "Centro :",IDC_STATIC,15,247,75,8
+    LTEXT           "Límite máximo :",IDC_STATIC,15,261,75,8
+    CTEXT           "00000",ID6zrmin,12,175,20,8
+    CTEXT           "0",ID6zrval,69,175,75,8
+    CTEXT           "00000",ID6zrmax,188,175,20,8
+    CTEXT           "00000",ID6zvmin,12,215,20,8
+    CTEXT           "0",ID6zvval,69,215,75,8
+    CTEXT           "00000",ID6zvmax,188,215,20,8
+    EDITTEXT        ID6Escalaz1,164,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalaz2,189,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Centroz,66,245,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulaz0,66,230,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNulaz1,186,230,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNulaz2,66,260,30,12,ES_NUMBER
+    GROUPBOX        "Pedales",IDC_STATIC,227,147,205,129
+    PUSHBUTTON      "Probar valores",ID6Botonr,342,260,73,12
+    LTEXT           "Zona Nula Central :",IDC_STATIC,342,232,66,8
+    LTEXT           "Zona Nula :             /",IDC_STATIC,342,247,72,8
+    CONTROL         "",ID6Reglarr,"msctls_trackbar32",WS_TABSTOP,237,165,186,
+                    10
+    CONTROL         "",ID6Reglarv,"msctls_trackbar32",WS_TABSTOP,237,205,186,
+                    10
+    CTEXT           "Posición real",IDC_STATIC,289,155,75,8
+    CTEXT           "Posición filtrada",IDC_STATIC,289,195,75,8
+    LTEXT           "Límite mínimo :",IDC_STATIC,235,232,75,8
+    LTEXT           "Centro :",IDC_STATIC,235,247,75,8
+    LTEXT           "Límite máximo :",IDC_STATIC,235,261,75,8
+    CTEXT           "00000",ID6rrmin,232,175,20,8
+    CTEXT           "0",ID6rrval,289,175,75,8
+    CTEXT           "00000",ID6rrmax,408,175,20,8
+    CTEXT           "00000",ID6rvmin,232,215,20,8
+    CTEXT           "0",ID6rvval,289,215,75,8
+    CTEXT           "00000",ID6rvmax,408,215,20,8
+    EDITTEXT        ID6Escalar1,385,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Escalar2,408,245,17,12,ES_NUMBER
+    EDITTEXT        ID6Centror,286,245,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNular0,286,230,30,12,ES_NUMBER
+    EDITTEXT        ID6ZNular1,405,230,20,12,ES_NUMBER
+    EDITTEXT        ID6ZNular2,286,260,30,12,ES_NUMBER
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(ESP)
+#if defined(APSTUDIO_INVOKED)
+IDR_MENU_ESP$(ESP) MENU 
+#else
+IDR_MENU_ESP MENU 
+#endif
+BEGIN
+    POPUP "Archivo"
+    BEGIN
+        MENUITEM "Guardar",                     ID_ARCHIVO_GUARDAR
+        MENUITEM "Guardar como...",             ID_ARCHIVO_GUARDARCOMO
+        MENUITEM SEPARATOR
+        MENUITEM "Salir",                       ID_ARCHIVO_SALIR
+    END
+    POPUP "Ver"
+    BEGIN
+        MENUITEM "Editor de comandos",          ID_VER_COMANDOS
+        MENUITEM "Resumen/Imprimir",            ID_VER_RESUMEN
+    END
+    POPUP "Ayuda"
+    BEGIN
+        MENUITEM "Sobre el X36Map...",          ID_SOBRE_SOBREELX36MAP
+    END
+END
+#endif
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "IDD_X36MAP_DIALOG$(ESP)", DIALOG
+    BEGIN
+        BOTTOMMARGIN, 296
+    END
+
+    "IDD_X36MAP_ACERCADE$(ESP)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    "IDD_X36MAP_CALIBRAR$(ESP)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 432
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""afxres.rc""         // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_Principal           ICON                    "res\\X36Map.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\x36map.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP                  "res\\toolbar.bmp"
+#endif    // Español resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "afxres.rc"         // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
